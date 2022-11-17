@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyView" customModule="VideoGamesApp" customModuleProvider="target">
+            <connections>
+                <outlet property="Img" destination="1bI-0X-zdn" id="Q4t-Dk-HaU"/>
+                <outlet property="textLabel" destination="U6A-xE-gD1" id="E9f-hL-V6J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="EmptyView" image="sadImg" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-0X-zdn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="1" green="0.90860259739708249" blue="0.75378677356473989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdF-9B-yD4">
+                    <rect key="frame" x="40" y="717" width="354" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry! Not found!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6A-xE-gD1">
+                            <rect key="frame" x="67" y="12" width="220" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="LightPurple"/>
+                    <constraints>
+                        <constraint firstItem="U6A-xE-gD1" firstAttribute="centerY" secondItem="QdF-9B-yD4" secondAttribute="centerY" id="jKt-0F-rxY"/>
+                        <constraint firstItem="U6A-xE-gD1" firstAttribute="centerX" secondItem="QdF-9B-yD4" secondAttribute="centerX" id="w4Z-Db-uNN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QdF-9B-yD4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="2jL-el-IS5"/>
+                <constraint firstItem="1bI-0X-zdn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3r3-4z-o0f"/>
+                <constraint firstItem="QdF-9B-yD4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="673" id="FsM-gv-GPd"/>
+                <constraint firstItem="1bI-0X-zdn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gd5-GZ-cfX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QdF-9B-yD4" secondAttribute="bottom" constant="85" id="gqW-s0-J3U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QdF-9B-yD4" secondAttribute="trailing" constant="20" id="l8O-cT-YuV"/>
+                <constraint firstItem="1bI-0X-zdn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sd7-6c-qzQ"/>
+                <constraint firstAttribute="bottom" secondItem="1bI-0X-zdn" secondAttribute="bottom" id="xMj-eG-ATT"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sadImg" width="626" height="626"/>
+        <namedColor name="LightPurple">
+            <color red="0.43900001049041748" green="0.34099999070167542" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

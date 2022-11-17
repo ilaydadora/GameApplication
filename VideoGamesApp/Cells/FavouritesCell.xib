@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="QyC-4B-lzg" customClass="FavoritesCell" customModule="VideoGamesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oM-UN-NxG" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="148"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HSX-hn-ZK7">
+                                <rect key="frame" x="10" y="0.0" width="364" height="148"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oap-vd-GOJ">
+                                        <rect key="frame" x="0.0" y="20" width="182" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Of Game" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsl-bh-99x">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Released" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zO-lA-Bah">
+                                                <rect key="frame" x="0.0" y="34" width="63" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYG-nd-4ak">
+                                                <rect key="frame" x="0.0" y="62" width="44" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Date:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6I-AY-B0b">
+                                                <rect key="frame" x="0.0" y="90" width="95" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZu-od-cRj">
+                                        <rect key="frame" x="182" y="0.0" width="182" height="148"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wuW-r8-3Ll" customClass="CustomImageView" customModule="VideoGamesApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="148"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wuW-r8-3Ll" firstAttribute="top" secondItem="OZu-od-cRj" secondAttribute="top" id="BUF-f7-Zpu"/>
+                                            <constraint firstAttribute="bottom" secondItem="wuW-r8-3Ll" secondAttribute="bottom" id="Sx5-2U-iK9"/>
+                                            <constraint firstItem="wuW-r8-3Ll" firstAttribute="leading" secondItem="OZu-od-cRj" secondAttribute="leading" id="UR6-vi-gDR"/>
+                                            <constraint firstAttribute="trailing" secondItem="wuW-r8-3Ll" secondAttribute="trailing" id="nPq-22-zh0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="MediumGray"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HSX-hn-ZK7" secondAttribute="trailing" id="Q3o-en-GyH"/>
+                            <constraint firstItem="HSX-hn-ZK7" firstAttribute="leading" secondItem="7oM-UN-NxG" secondAttribute="leading" constant="10" id="laP-9G-WcR"/>
+                            <constraint firstAttribute="bottom" secondItem="HSX-hn-ZK7" secondAttribute="bottom" id="oAD-Li-52k"/>
+                            <constraint firstItem="HSX-hn-ZK7" firstAttribute="top" secondItem="7oM-UN-NxG" secondAttribute="top" id="wJ3-ob-ZzI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="BNJ-Zo-MFQ"/>
+            <constraints>
+                <constraint firstItem="7oM-UN-NxG" firstAttribute="top" secondItem="QyC-4B-lzg" secondAttribute="top" id="L4W-bd-Bg9"/>
+                <constraint firstItem="7oM-UN-NxG" firstAttribute="leading" secondItem="QyC-4B-lzg" secondAttribute="leading" id="eJ2-P4-QQ3"/>
+                <constraint firstAttribute="bottom" secondItem="7oM-UN-NxG" secondAttribute="bottom" id="hg0-72-pf1"/>
+                <constraint firstAttribute="trailing" secondItem="7oM-UN-NxG" secondAttribute="trailing" id="qec-YO-c9O"/>
+            </constraints>
+            <size key="customSize" width="478" height="142"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="favDate" destination="s6I-AY-B0b" id="Sn8-Hp-TzV"/>
+                <outlet property="gameImg" destination="wuW-r8-3Ll" id="rkP-eD-hBr"/>
+                <outlet property="gameNameLabel" destination="Dsl-bh-99x" id="gFj-vW-vlg"/>
+                <outlet property="ratingLabel" destination="cYG-nd-4ak" id="Qhg-nr-RUd"/>
+                <outlet property="relasedDate" destination="9zO-lA-Bah" id="AA0-ws-RwJ"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="87"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MediumGray">
+            <color red="0.18400000035762787" green="0.18400000035762787" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
